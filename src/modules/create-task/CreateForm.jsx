@@ -38,8 +38,17 @@ function CreateForm() {
         }}
       >
         <Typography variant="h4" color="secondary">
-          Crear Usuario
+          Create a New Task
         </Typography>
+        <Input
+          variant="outlined"
+          size="medium"
+          label="Id"
+          color="secondary"
+          focused
+          fullWidth
+          onChange={(e) => handleValue("Id", e.target.value)}
+        />
         <Input
           variant="outlined"
           size="medium"
@@ -59,14 +68,14 @@ function CreateForm() {
           onChange={(e) => handleValue("Description", e.target.value)}
         />
         <Input
-          type="password"
+          type="text"
           variant="outlined"
           size="medium"
-          label="Completed"
+          label="Completed (True or False)"
           color="secondary"
           focused
           fullWidth
-          onChange={(e) => handleValue("Completed", e.target.value)}
+          onChange={(e) => handleValue("Completed (True or False)", e.target.value)}
         />
         <Button
           variant="contained"
@@ -74,7 +83,7 @@ function CreateForm() {
           fullWidth
           onClick={handleSubmit}
         >
-          Crear
+          Create
         </Button>
       </Box>
     </CustomCard>
