@@ -8,7 +8,7 @@ function App() {
   const [data, setData] = useState([])
   useEffect(() => {
     axios
-    .get("https://crudtaskpro-qfy0-dev.fl0.io/all")
+    .get("https://crudtaskproform-uk0s-dev.fl0.io/all")
     .then(res => {
       const { data } = res;
       if(data) {
@@ -28,15 +28,6 @@ function App() {
       }}
     >
       <CreateForm /> 
-      <Stack gap="20px">
-        {
-          data.map(user => (
-            <Typography key={user.email} color="secondary">
-              {user.username}
-            </Typography>
-          ))
-        }
-      </Stack>
     </Box>
   );
 }

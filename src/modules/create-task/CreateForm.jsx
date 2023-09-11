@@ -20,7 +20,7 @@ function CreateForm() {
   const handleSubmit = () => {
     console.log(formValues);
     axios
-    .post("https://crudtaskpro-qfy0-dev.fl0.io/all", formValues)
+    .post("https://crudtaskproform-uk0s-dev.fl0.io/all", formValues)
     .then(res => console.log(res.data))
     .catch(error => console.log(error))
   };
