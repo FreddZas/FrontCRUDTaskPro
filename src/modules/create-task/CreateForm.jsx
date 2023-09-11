@@ -38,7 +38,7 @@ function CreateForm() {
         }}
       >
         <Typography variant="h4" color="secondary">
-          Create a New Task
+          Create a New Tas
         </Typography>
         <Input
           variant="outlined"
